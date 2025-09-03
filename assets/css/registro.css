@@ -2,6 +2,16 @@ body {
     background-color: #000;
     
 }
+.navbar-brand {
+    color: #fff;
+    font-family: "Orbitron";
+}
+
+.nav-link {
+    color: #fff;
+    font-family: "Orbitron";
+
+}
 
 .form-container {
       background-color: #333;
@@ -17,7 +27,7 @@ body {
       margin-bottom: 20px;
       text-align: center;
       color: #fff;
-      font-family: "Roboto";
+      font-family: "Orbitron";
     }
 
     label {
