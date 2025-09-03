@@ -95,3 +95,20 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+ function initMap() {
+    // Coordenadas de Santiago (ejemplo, puedes cambiarlas por tu ciudad)
+    const ubicacion = { lat: -33.4489, lng: -70.6693 };
+
+    // Crear mapa
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 13,
+      center: ubicacion,
+    });
+
+    // Agregar marcador
+    new google.maps.Marker({
+      position: ubicacion,
+      map: map,
+      title: "Estamos aquí 😎",
+    });
+  }

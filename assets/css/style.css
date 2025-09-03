@@ -37,6 +37,13 @@ h2 {
     padding-bottom: 20px;
 }
 
+h3 {
+    font-family: "Orbitron";
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 h5 {
     font-family: "Orbitron";
     color: #fff;
@@ -113,7 +120,7 @@ main {
 
 /* Footer fijo abajo */
 footer {
-    background-color: #111;
+    background-color: transparent;
     color: white;
     text-align: center;
     padding: 15px;

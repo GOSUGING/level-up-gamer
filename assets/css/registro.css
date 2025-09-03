@@ -95,7 +95,7 @@ input[type="submit"]:hover {
 
 /* Footer siempre abajo */
 footer {
-    background-color: #111; 
+    background-color: transparent; 
     color: #fff;
     text-align: center;
     padding: 15px;

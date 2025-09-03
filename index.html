@@ -170,58 +170,70 @@
                     </p>
                 </section>
         </div>
-        <h2>Blog Destacados 📰</h2>
-        <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
 
-                <!-- Slide 1 -->
-                <div class="carousel-item active">
-                    <a href="https://as.com/meristation" target="_blank">
-                        <img src="./assets/img/099eb829-7eeb-4625-9ef8-d21636cb46a2-profile_banner-480.jpeg"
-                            class="d-block w-100" alt="Blog 1">
-                        <div class="carousel-caption d-none d-md-block">
-                            <p></p>
+
+        <div class="row mt-4">
+            <!-- Columna carrusel -->
+            <div class="col-md-8">
+                <h2 class="text-center">Blog Destacados 📰</h2>
+                <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <a href="https://as.com/meristation" target="_blank">
+                                <img src="./assets/img/099eb829-7eeb-4625-9ef8-d21636cb46a2-profile_banner-480.jpeg"
+                                    class="d-block w-100" alt="Blog 1">
+                            </a>
                         </div>
-                    </a>
-                </div>
 
-                <!-- Slide 2 -->
-                <div class="carousel-item">
-                    <a href="https://www.3djuegos.com" target="_blank">
-                        <img src="./assets/img/1366_521.jpeg" class="d-block w-100" alt="Blog 2">
-                        <div class="carousel-caption d-none d-md-block">
-                            <p></p>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <a href="https://www.3djuegos.com" target="_blank">
+                                <img src="./assets/img/1366_521.jpeg" class="d-block w-100" alt="Blog 2">
+                            </a>
                         </div>
-                    </a>
-                </div>
 
-                <!-- Slide 3 -->
-                <div class="carousel-item">
-                    <a href="https://www.tarreo.com" target="_blank">
-                        <img src="./assets/img/87842165034469.5ae6b780cc4bd.png" class="d-block w-100" alt="Blog 3">
-                        <div class="carousel-caption d-none d-md-block">
-                            <p></p>
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <a href="https://www.tarreo.com" target="_blank">
+                                <img src="./assets/img/87842165034469.5ae6b780cc4bd.png" class="d-block w-100"
+                                    alt="Blog 3">
+                            </a>
                         </div>
-                    </a>
-                </div>
 
+                    </div>
+
+                    <!-- Controles -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
             </div>
 
-            <!-- Controles -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
+            <!-- Columna mapa -->
+            <div class="col-md-4">
+                <h3 class="text-center">Ubicación 📍</h3>
+                <div id="map" style="height:300px; width:100%; border-radius:8px;"></div>
+            </div>
+        
         </div>
+           
 
     </main>
 
     <!-- Pie de página -->
-    <footer class="bg-dark text-white text-center py-3 mt-4">
+    <footer class="text-white text-center py-3 mt-4">
         <p>&copy; 2025 Level-Up Gamer. Todos los derechos reservados.</p>
     </footer>
+    <!-- Script para inicializar el mapa de Google Maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap">
+    </script>
 
     <!-- Bootstrap JS desde CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
