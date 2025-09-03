@@ -1,0 +1,97 @@
+body {
+    background-color: #000;
+    margin: 0;                 /* quita espacios por defecto */
+    min-height: 100vh;         /* que ocupe toda la ventana */
+    display: flex;             /* usamos flexbox */
+    flex-direction: column;    /* apilado vertical */
+}
+
+/* Estilos para la barra de navegación */
+.navbar-brand {
+    color: #fff;
+    font-family: "Orbitron";
+}
+
+.nav-link {
+    color: #fff;
+    font-family: "Orbitron";
+}
+
+/* Estilos para el contenido principal */
+main {
+    flex: 1;   /* el main ocupa todo el espacio disponible */
+}
+
+/* Estilos para el formulario */
+.form-container {
+    background-color: #333;
+    padding: 25px 30px;
+    border-radius: 8px;
+    width: 350px;
+    box-sizing: border-box;
+    margin: 40px auto;
+}
+
+.form-container h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: "Orbitron";
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #444;
+    color: white;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: "Roboto";
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #1E90FF;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #39FF14;
+}
+
+.error {
+    color: #ff6b6b;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: none;
+}
+
+/* Footer siempre abajo */
+footer {
+    background-color: #111; 
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-family: "Roboto";
+}
+/* Estilos específicos para el formulario de registro */

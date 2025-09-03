@@ -1,7 +1,8 @@
+/*Color background del body*/
 body {
     background-color: #000;
 }
-
+/* Estilos para la barra de navegación */
 .navbar-brand {
     color: #fff;
     font-family: "Orbitron";
@@ -12,3 +13,102 @@ body {
     font-family: "Orbitron";
 
 }
+
+/* Estilos para los encabezados */
+h1 {
+    font-family: "Orbitron";
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h2 {
+    font-family: "Orbitron";
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h5 {
+    font-family: "Orbitron";
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Estilos para los párrafos */
+p {
+    color: #D3D3D3;
+    font-family: "Roboto";
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Contenedor del formulario centrado y con ancho fijo */
+.form-container {
+    max-width: 500px; /* Más pequeño */
+    margin: 40px auto; /* Centrado horizontal y un poco de margen arriba */
+    padding: 20px;
+    background-color: #222; /* Fondo oscuro */
+    border-radius: 8px;
+    color: white; /* Texto blanco */
+}
+/* Etiquetas e inputs con texto blanco y fondo oscuro */
+.form-container label,
+.form-container input {
+    color: white !important;
+    font-family: "Roboto";
+}
+
+/* Estilos para los márgenes de los formularios */
+.mb-3 label,
+.mb-3 input {
+    color: white !important; /* Texto blanco para etiquetas y campos */
+    font-family: "Roboto";
+}
+
+.form-control, .form-control-plaintext {
+    background-color: #333 !important; /* Fondo oscuro para inputs editables y no editables */
+    border-color: #555; /* Bordes más visibles en oscuro */
+}
+
+/* Botón personalizado */
+.btn-register, .btn-login {
+    background-color: #1E90FF; /* Azul bootstrap */
+    color: white;
+    font-family: "Roboto";
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.btn-register:hover, .btn-login:hover {
+    background-color: #39FF14;
+}
+
+/* Hace que el body ocupe toda la altura */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* El contenido principal ocupa todo el espacio disponible */
+main {
+    flex: 1;
+}
+
+/* Footer fijo abajo */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
