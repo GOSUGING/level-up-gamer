@@ -126,12 +126,12 @@ footer {
         color: black !important;
     }
  /* Ajustar tamaño del carrusel */
-    #blogCarousel {
+#blogCarousel {
       max-width: 600px;   /* ancho máximo */
       margin: 0 auto;     /* centrar horizontal */
     }
 
-    #blogCarousel img {
+#blogCarousel img {
       height: 300px;      /* alto fijo */
       object-fit: cover;  /* recorta la imagen para que no se deforme */
       border-radius: 10px; /* bordes redondeados opcionales */
