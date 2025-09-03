@@ -7,6 +7,13 @@ body {
 }
 
 /* Estilos para la barra de navegación */
+.nav-custom {
+    background-color: transparent !important; /* Fondo transparente */
+    position: fixed; /* Fijo en la parte superior */
+    width: 100%;
+    z-index: 1000;
+}
+
 .navbar-brand {
     color: #fff;
     font-family: "Orbitron";
