@@ -1,35 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Indica que el documento es HTML5 -->
+<html lang="en"> <!-- Define que el idioma principal del documento es inglés -->
+
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- Permite usar caracteres especiales como ñ, tildes y emojis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level - Up Gamer</title>
+    <!-- Ajusta la página para que sea responsive en celulares -->
+
+    <title>Level - Up Gamer</title> <!-- Título que aparece en la pestaña del navegador -->
+
+    <!-- Bootstrap CSS desde CDN para usar componentes ya diseñados -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Conexión previa a Google Fonts para optimizar carga -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importa tipografía Roboto desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <!-- Conexión previa a Google Fonts para optimizar carga -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importa tipografía Orbitron para darle estilo gamer -->
     <link
         href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
+    <!-- Enlace a la hoja de estilos personalizada -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+    <!-- Barra de navegación con Bootstrap -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">Level-Up Gamer</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                <!-- Botón hamburguesa en pantallas pequeñas -->
                 <span class="navbar-toggler-icon"></span>
+
             </button>
+            <!-- Menú desplegable -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+                    <!-- Enlaces de navegación-->
                     <li class="nav-item">
                         <a class="nav-link" href="./categorias.html">Categorias</a>
                     </li>
@@ -44,104 +59,130 @@
         </div>
     </nav>
 
+    <!-- Contenido principal -->
     <main>
-    <div class="container">
-        <h1>Bienvenidos a Level-Up Gamer</h1>
-        <p>Tu destino definitivo para equipos y accesorios de juego.</p>
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./assets/img/signal-5153517_1280.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Gamer Zone</h5>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus esse sint debitis sapiente
-                            praesentium, eaque amet iusto sunt, cum dolore deserunt quod ullam fuga odit, doloremque
-                            alias id animi distinctio.</p>
-                    </div>
+        <div class="container">
+            <h1>Bienvenidos a Level-Up Gamer</h1>
+            <p>Tu destino definitivo para equipos y accesorios de juego.</p>
+
+            <!-- Carrusel con Bootstrap -->
+            <div id="carouselExampleCaptions" class="carousel slide">
+
+                <!-- Botones indicadores (puntitos de navegación del carrusel) -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-item">
-                    <img src="./assets/img/playstation-2617305_640.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Joysticks</h5>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam illum odio numquam
-                            accusantium quis, suscipit quibusdam reiciendis. Necessitatibus amet nulla rem, tenetur
-                            autem et eaque fugiat ipsa quibusdam quia quod.</p>
+
+                <!-- Contenido del carrusel -->
+                <div class="carousel-inner">
+
+                    <!-- Primer slide -->
+                    <div class="carousel-item active">
+                        <img src="./assets/img/signal-5153517_1280.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Gamer Zone</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus esse sint debitis
+                                sapiente
+                                praesentium, eaque amet iusto sunt, cum dolore deserunt quod ullam fuga odit, doloremque
+                                alias id animi distinctio.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/img/gaming-computer-6903836_640.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Pc gamers</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptas, quasi similique
-                            accusamus sapiente quas sint saepe quidem quibusdam asperiores hic magnam qui et error odit
-                            facere iste corrupti repellendus..</p>
+
+                    <!-- Segundo slide -->
+                    <div class="carousel-item">
+                        <img src="./assets/img/playstation-2617305_640.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Joysticks</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam illum odio numquam
+                                accusantium quis, suscipit quibusdam reiciendis. Necessitatibus amet nulla rem, tenetur
+                                autem et eaque fugiat ipsa quibusdam quia quod.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tercer slide -->
+                    <div class="carousel-item">
+                        <img src="./assets/img/gaming-computer-6903836_640.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Pc gamers</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptas, quasi
+                                similique
+                                accusamus sapiente quas sint saepe quidem quibusdam asperiores hic magnam qui et error
+                                odit
+                                facere iste corrupti repellendus..</p>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span><!-- Texto accesible para lectores de pantalla -->
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span><!-- Texto accesible para lectores de pantalla -->
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <!-- Sección de información sobre la tienda -->
+            <section class="row">
+                <section class="col-md-4">
+                    <h2>
+                        Quienes Somos 🎮
+                    </h2>
+                    <p>
+                        Level-Up Gamer es una tienda online dedicada a satisfacer las necesidades de los entusiastas de
+                        los
+                        videojuegos en Chile. Lanzada hace dos años como respuesta a la creciente demanda durante la
+                        pandemia, Level-Up Gamer ofrece una amplia gama de productos para gamers, desde consolas y
+                        accesorios hasta computadores y sillas especializadas. Aunque no cuenta con una ubicación
+                        física,
+                        realiza despachos a todo el país, asegurando que los jugadores puedan acceder a los mejores
+                        productos sin importar su ubicación.
+                </section>
+                <section class="col-md-4">
+                    <h2>
+                        Misión 🚀
+                    </h2>
+                    <p>
+                        Proporcionar productos de alta calidad para gamers en todo Chile, ofreciendo una experiencia de
+                        compra única y personalizada, con un enfoque en la satisfacción del cliente y el crecimiento de
+                        la
+                        comunidad gamer.
+
+                    </p>
+                </section>
+                <section class="col-md-4">
+                    <h2>
+                        Visión 🌟
+                    </h2>
+                    <p>
+                        Ser la tienda online líder en productos para gamers en Chile, reconocida por su innovación,
+                        servicio
+                        al cliente excepcional, y un programa de fidelización basado en gamificación que recompense a
+                        nuestros clientes más fieles.
+                    </p>
+                </section>
         </div>
-        <section class="row">
-            <section class="col-md-4">
-                <h2>
-                    Quienes Somos 🎮
-                </h2>
-                <p>
-                    Level-Up Gamer es una tienda online dedicada a satisfacer las necesidades de los entusiastas de los
-                    videojuegos en Chile. Lanzada hace dos años como respuesta a la creciente demanda durante la
-                    pandemia, Level-Up Gamer ofrece una amplia gama de productos para gamers, desde consolas y
-                    accesorios hasta computadores y sillas especializadas. Aunque no cuenta con una ubicación física,
-                    realiza despachos a todo el país, asegurando que los jugadores puedan acceder a los mejores
-                    productos sin importar su ubicación.
-            </section>
-            <section class="col-md-4">
-                <h2>
-                    Misión 🚀
-                </h2>
-                <p>
-                    Proporcionar productos de alta calidad para gamers en todo Chile, ofreciendo una experiencia de
-                    compra única y personalizada, con un enfoque en la satisfacción del cliente y el crecimiento de la
-                    comunidad gamer.
-
-                </p>
-            </section>
-            <section class="col-md-4">
-                <h2>
-                    Visión 🌟
-                </h2>
-                <p>
-                    Ser la tienda online líder en productos para gamers en Chile, reconocida por su innovación, servicio
-                    al cliente excepcional, y un programa de fidelización basado en gamificación que recompense a
-                    nuestros clientes más fieles.
-                </p>
-            </section>
-
-    </div>
     </main>
+    
+    <!-- Pie de página -->
     <footer class="bg-dark text-white text-center py-3 mt-4">
         <p>&copy; 2025 Level-Up Gamer. Todos los derechos reservados.</p>
     </footer>
-
+    
+    <!-- Bootstrap JS desde CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    
+    <!-- Archivo JS propio -->
     <script src="./assets/js/main.js"></script>
 </body>
 

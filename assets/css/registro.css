@@ -6,6 +6,7 @@ body {
     flex-direction: column;    /* apilado vertical */
 }
 
+/* Estilos para la barra de navegación */
 .navbar-brand {
     color: #fff;
     font-family: "Orbitron";
@@ -16,10 +17,12 @@ body {
     font-family: "Orbitron";
 }
 
+/* Estilos para el contenido principal */
 main {
     flex: 1;   /* el main ocupa todo el espacio disponible */
 }
 
+/* Estilos para el formulario */
 .form-container {
     background-color: #333;
     padding: 25px 30px;
@@ -85,7 +88,7 @@ input[type="submit"]:hover {
 
 /* Footer siempre abajo */
 footer {
-    background-color: #111;
+    background-color: #111; 
     color: #fff;
     text-align: center;
     padding: 15px;
