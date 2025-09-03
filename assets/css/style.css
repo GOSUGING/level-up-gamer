@@ -12,3 +12,48 @@ body {
     font-family: "Orbitron";
 
 }
+
+/* Contenedor del formulario centrado y con ancho fijo */
+.form-container {
+    max-width: 500px; /* Más pequeño */
+    margin: 40px auto; /* Centrado horizontal y un poco de margen arriba */
+    padding: 20px;
+    background-color: #222; /* Fondo oscuro */
+    border-radius: 8px;
+    color: white; /* Texto blanco */
+}
+/* Etiquetas e inputs con texto blanco y fondo oscuro */
+.form-container label,
+.form-container input {
+    color: white !important;
+    font-family: "Roboto";
+}
+
+.mb-3 label, 
+.mb-3 input {
+    color: white !important; /* Texto blanco para etiquetas y campos */
+    font-family: "Roboto";
+}
+
+.form-control, .form-control-plaintext {
+    background-color: #333 !important; /* Fondo oscuro para inputs editables y no editables */
+    border-color: #555; /* Bordes más visibles en oscuro */
+}
+
+/* Botón personalizado */
+.btn-register, .btn-login {
+    background-color: #1E90FF; /* Azul bootstrap */
+    color: white;
+    font-family: "Roboto";
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.btn-register:hover, .btn-login:hover {
+    background-color: #39FF14;
+}
