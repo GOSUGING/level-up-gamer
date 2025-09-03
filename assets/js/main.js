@@ -69,3 +69,29 @@ document.addEventListener('DOMContentLoaded', () => {
       // Aquí podrías agregar más validaciones si quieres
 
     });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const btnLogin = document.querySelector('.btn-login');
+  const inputEmail = document.getElementById('inputEmail');
+  const inputPassword = document.getElementById('inputPassword');
+
+  btnLogin.addEventListener('click', () => {
+    const email = inputEmail.value.trim();
+    const password = inputPassword.value;
+
+    // Validación email simple
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert('Por favor, ingresa un correo electrónico válido.');
+      return;
+    }
+
+    if (!password) {
+      alert('Por favor, ingresa tu contraseña.');
+      return;
+    }
+
+    alert('Iniciando sesión...');
+  });
+});
+
