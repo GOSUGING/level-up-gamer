@@ -150,3 +150,8 @@ footer {
       object-fit: cover;  /* recorta la imagen para que no se deforme */
       border-radius: 10px; /* bordes redondeados opcionales */
     }
+
+.fa-brand {
+    color: #333;
+    
+}
