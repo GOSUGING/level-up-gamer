@@ -154,7 +154,6 @@ footer {
 .fa-brand {
     color: #333;
     animation: beat-fade 1.5s infinite both;
-    height: 40px;
 }
 
 @keyframes beat-fade {
