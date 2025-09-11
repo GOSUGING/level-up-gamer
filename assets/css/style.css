@@ -171,8 +171,14 @@ footer {
 
 .card {
   background-color: #007BFF; /* Azul eléctrico */
-  color: #fff; /* Texto en blanco para contraste */
-  border: none; /* Quitar borde gris por defecto */
+  color: #fff;
+  border: none;
+  margin: 0 auto; /* Centrar en la columna */
+  width: 18rem;   /* Ancho fijo */
+  height: 28rem;  /* Alto fijo */
+  display: flex;
+  flex-direction: column; /* Para que el contenido se distribuya verticalmente */
+  justify-content: space-between; /* Espaciado uniforme */
 }
 
 .card .card-title {
@@ -181,17 +187,27 @@ footer {
 }
 
 .card .card-text {
-  color: #f8f9fa; /* Blanco suave */
+  color: #f8f9fa;
 }
 
 .card img {
-  border-bottom: 2px solid #fff; /* Separador blanco bajo la imagen */
-}
-.card:hover {
-  background-color: #39FF14; /* Verde neón al pasar el ratón */
-  color: #000; /* Cambiar texto a negro */
+  border-bottom: 2px solid #fff;
+  height: 200px;      /* Alto fijo para todas las imágenes */
+  object-fit: contain; /* Ajusta imagen sin deformarla */
 }
 
-.row {
-  justify-content: center; /* Centra las cards dentro de cada fila */
+.card:hover {
+  background-color: #39FF14; /* Verde neón */
+  color: #000;
+  transform: scale(1.03);
+  transition: 0.3s ease;
 }
+
+/* Centrar las cards en cada fila */
+.row {
+  justify-content: center;
+}
+/* Espaciado entre las cards */
+.col-md-4 {
+  margin-bottom: 30px;
+}   
