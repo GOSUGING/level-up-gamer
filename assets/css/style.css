@@ -168,3 +168,30 @@ footer {
         opacity: 0.7;
     }
 }
+
+.card {
+  background-color: #007BFF; /* Azul eléctrico */
+  color: #fff; /* Texto en blanco para contraste */
+  border: none; /* Quitar borde gris por defecto */
+}
+
+.card .card-title {
+  color: #fff;
+  font-weight: bold;
+}
+
+.card .card-text {
+  color: #f8f9fa; /* Blanco suave */
+}
+
+.card img {
+  border-bottom: 2px solid #fff; /* Separador blanco bajo la imagen */
+}
+.card:hover {
+  background-color: #39FF14; /* Verde neón al pasar el ratón */
+  color: #000; /* Cambiar texto a negro */
+}
+
+.row {
+  justify-content: center; /* Centra las cards dentro de cada fila */
+}
