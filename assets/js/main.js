@@ -43,12 +43,7 @@ document.addEventListener('DOMContentLoaded', () => { // Esperar a que el DOM es
       // Limpiar mensajes de error previos
       errorMsg.style.display = 'none';
       errorMsg.textContent = '';
-
-      const nombre = form.nombre.value.trim(); // Trim para evitar espacios
-      const email = form.email.value.trim(); // Trim para evitar espacios
-      const fechaNacimiento = new Date(form.fechaNacimiento.value); // Convertir a objeto Date
-      const password = form.password.value; // No trim para contraseñas
-      const password2 = form.password2.value; // No trim para contraseñas
+      
       const hoy = new Date(); // Fecha actual
 
       if (!form.fechaNacimiento.value) { // Verificar que la fecha no esté vacía
@@ -76,7 +71,6 @@ document.addEventListener('DOMContentLoaded', () => { // Esperar a que el DOM es
         return;
       }
 
-      // Puedes agregar más validaciones aquí
     });
   }
 
